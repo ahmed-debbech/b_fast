@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>backgroung-01.png</file>
+        <file>Gerer parking.png</file>
+        <file>Interface gestion.png</file>
+        <file>Login.png</file>
+        <file>SMTP-01_Plan de travail 1.png</file>
+        <file>login_Plan de travail 1.png</file>
+        <file>gestions_Plan de travail 1.png</file>
+        <file>park_Plan de travail 1.png</file>
+    </qresource>
+</RCC>

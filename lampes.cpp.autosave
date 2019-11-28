@@ -1,0 +1,45 @@
+#include "lampes.h"
+#include "ui_lampes.h"
+#include"lampe.h"
+#include<QMessageBox>
+#include<QDebug>
+
+Lampes::Lampes(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::Lampes)
+{
+    ui->setupUi(this);
+}
+
+Lampes::~Lampes()
+{
+    delete ui;
+}
+
+void Lampes::on_AjouterLampe_clicked()
+{
+    int id_lampe = ui->lineEdit_NUM_7->text().toInt();
+        int etat= ui->lineEdit_Etat_5->text().toInt();
+        QString Date_inst= ui->lineEdit11->text();
+     Lampe L(id_lampe,etat,Date_inst);
+      bool test=L.ajouter_Lampe();
+      if(test)
+   {
+          ////refresh
+    QMessageBox::information(nullptr, QObject::tr("Ajouter une Lampe"),
+                      QObject::tr("Lampe ajoutée.\n"
+                                  "Click Cancel to exit."), QMessageBox::Cancel);
+
+    }
+      else
+      {QMessageBox::critical(nullptr, QObject::tr("Ajouter une Lampe"),
+                      QObject::tr("Erreur !.\n"
+                                  "Click Cancel to exit."), QMessageBox::Cancel);}
+      ui->tableViewLampes->setModel(tmplampe.afficher_lampe());
+}
+
+void Lampes::on_AfficherLampe_clicked()
+{
+    ui->tableViewLampes->setModel(tmplampe.afficher_lampe());
+}
+
