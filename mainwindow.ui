@@ -6,25 +6,89 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>879</width>
-    <height>500</height>
+    <width>1406</width>
+    <height>699</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-</string>
+   <string notr="true">QWidget#centralwidget
+{
+	background-image: url(:/76657357_538317590335070_5561093495600447488_n.png);
+}</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>259</y>
+      <width>541</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>-10</y>
+       <width>221</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pushButton{ 
+background-color:#AARRGGBB;
+border-radius: 2px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-20</y>
+       <width>231</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pushButton_2{ 
+background-color:#AARRGGBB;
+border-radius: 2px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>610</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>879</width>
-     <height>21</height>
+     <width>1406</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

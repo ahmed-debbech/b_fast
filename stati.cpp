@@ -18,7 +18,7 @@ int stati::Statistique_partie2()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from PLACE where Etat==1") ;
+    QSqlQuery requete("select * from HORAIRE where heure BETWEEN '8' AND '12'") ;
     while(requete.next())
     {
             count++ ;
@@ -33,7 +33,7 @@ int stati::Statistique_partie3()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from PLACE where ETAT==0") ;
+    QSqlQuery requete("select * from HORAIRE where heure BETWEEN '13' AND '16'") ;
     while(requete.next())
     {
             count++ ;
@@ -48,7 +48,7 @@ int stati::Statistique_partie4()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from personnel where age BETWEEN '43' AND '53'") ;
+    QSqlQuery requete("select * from HORAIRE where heure BETWEEN '17' AND '20'") ;
     while(requete.next())
     {
             count++ ;
@@ -82,17 +82,17 @@ void stati::paintEvent(QPaintEvent *)
         float z  ;
         z=360-(y+m) ;
     QPainter painter(this);
-    QRectF size=QRectF(50,50,this->width()-500,this->width()-500);
+    QRectF size=QRectF(50,50,this->width()-100,this->width()-100);
 
     painter.setBrush(Qt::blue);
     painter.drawPie(size,0,16*y);
-    ui->label_2->setText("21-31") ;
+    ui->label_2->setText("8-12") ;
     painter.setBrush(Qt::green);
     painter.drawPie(size,16*y,16*m);
-    ui->label_3->setText("32-43") ;
+    ui->label_3->setText("13-16") ;
     painter.setBrush(Qt::red);
     painter.drawPie(size,16*(m+y),16*z);
-    ui->label_4->setText("44-55") ;
+    ui->label_4->setText("17-20") ;
 
 }
 

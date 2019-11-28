@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>horaire</class>
+ <widget class="QDialog" name="horaire">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1352</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1381</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>ajouter_horaire</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>170</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>280</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>380</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>470</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>60</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID_ligne:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>170</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>annee:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>280</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mois:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>370</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Jour:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>460</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Heure:-</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>550</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>540</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Minute:-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>1010</x>
+       <y>190</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ajouter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>360</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_11</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>lineEdit_2</zorder>
+    <zorder>lineEdit_3</zorder>
+    <zorder>lineEdit_4</zorder>
+    <zorder>lineEdit_5</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>lineEdit_6</zorder>
+    <zorder>label_6</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_2</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>supprimer_horaire</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>200</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>supprimer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>370</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_8">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>260</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>260</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID_ligne:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_12</zorder>
+    <zorder>pushButton_3</zorder>
+    <zorder>pushButton_4</zorder>
+    <zorder>lineEdit_8</zorder>
+    <zorder>label_8</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>afficher_horaire</string>
+    </attribute>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>731</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>310</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>140</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>afficher</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>430</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>statistique</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>-5</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_10</zorder>
+    <zorder>tableView</zorder>
+    <zorder>pushButton_5</zorder>
+    <zorder>pushButton_6</zorder>
+    <zorder>pushButton_11</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Modifier _horaire</string>
+    </attribute>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>460</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Heure:-</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_7">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>60</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID_ligne:-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>190</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_9">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>470</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>360</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_13</zorder>
+    <zorder>label_7</zorder>
+    <zorder>lineEdit_7</zorder>
+    <zorder>label_9</zorder>
+    <zorder>pushButton_7</zorder>
+    <zorder>lineEdit_9</zorder>
+    <zorder>pushButton_8</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>trier_horaire</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>140</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>afficher trie</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>310</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>731</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_16</zorder>
+    <zorder>pushButton_9</zorder>
+    <zorder>pushButton_10</zorder>
+    <zorder>tableView_2</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>statistique_horaire</string>
+    </attribute>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>1341</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Desktop/Malek-01.png</pixmap>
+   </property>
+  </widget>
+  <zorder>label_14</zorder>
+  <zorder>tabWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ligne</class>
+ <widget class="QDialog" name="ligne">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1453</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1381</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>5</number>
+   </property>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>ajouter_ligne</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_10">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_11">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>170</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_12">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>280</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_13">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>380</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>60</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID_ligne:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>170</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nom:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>280</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dstination:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>370</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>source:-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>1010</x>
+       <y>190</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ajouter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>360</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_15</zorder>
+    <zorder>lineEdit_10</zorder>
+    <zorder>lineEdit_11</zorder>
+    <zorder>lineEdit_12</zorder>
+    <zorder>lineEdit_13</zorder>
+    <zorder>label_10</zorder>
+    <zorder>label_11</zorder>
+    <zorder>label_12</zorder>
+    <zorder>label_13</zorder>
+    <zorder>pushButton_11</zorder>
+    <zorder>pushButton_12</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>supprimer_ligne</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>200</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>supprimer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>370</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_16">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>260</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>260</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID_ligne:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_14</zorder>
+    <zorder>pushButton_13</zorder>
+    <zorder>pushButton_14</zorder>
+    <zorder>lineEdit_16</zorder>
+    <zorder>label_16</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>afficher_ligne</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>731</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>310</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>140</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>afficher</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_20</zorder>
+    <zorder>tableView_3</zorder>
+    <zorder>pushButton_15</zorder>
+    <zorder>pushButton_16</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>Modifier _ligne</string>
+    </attribute>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>460</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>nom:-</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_17">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>60</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID_ligne:-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>190</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_18">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>470</y>
+       <width>331</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_18">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>360</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_21</zorder>
+    <zorder>label_17</zorder>
+    <zorder>lineEdit_17</zorder>
+    <zorder>label_18</zorder>
+    <zorder>pushButton_17</zorder>
+    <zorder>lineEdit_18</zorder>
+    <zorder>pushButton_18</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_10">
+    <attribute name="title">
+     <string>trier_ligne</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_19">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>140</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>afficher trie</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_20">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>310</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>731</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_22</zorder>
+    <zorder>pushButton_19</zorder>
+    <zorder>pushButton_20</zorder>
+    <zorder>tableView_4</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_11">
+    <attribute name="title">
+     <string>chercher_ligne</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_21">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>140</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>afficher chercher</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>731</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_22">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>310</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>retour</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_19">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>40</y>
+       <width>331</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>40</y>
+       <width>161</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID_ligne:-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1341</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Desktop/Malek-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_23</zorder>
+    <zorder>pushButton_21</zorder>
+    <zorder>tableView_5</zorder>
+    <zorder>pushButton_22</zorder>
+    <zorder>lineEdit_19</zorder>
+    <zorder>label_19</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
