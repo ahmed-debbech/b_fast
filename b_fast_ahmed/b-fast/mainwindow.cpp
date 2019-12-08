@@ -73,7 +73,7 @@ void MainWindow::on_pushButton_5_clicked()
         s->delSubscriber();
      }else{
         QMessageBox::critical(nullptr, QObject::tr("Selection"),
-                              QObject::tr("You should select an item."), QMessageBox::Cancel);
+                              QObject::tr("Il faut selecter un element d'abord"), QMessageBox::Cancel);
 
     }
     on_pushButton_7_clicked(); // this function call is to refresh the table afte
@@ -111,7 +111,7 @@ void MainWindow::on_pushButton_4_clicked()
         }
     }else{
         QMessageBox::critical(nullptr, QObject::tr("Selection"),
-                              QObject::tr("You should select and item."), QMessageBox::Cancel);
+                              QObject::tr("Il faut selecter un element d'abord."), QMessageBox::Cancel);
     }
 }
 
@@ -131,7 +131,7 @@ void MainWindow::on_pushButton_9_clicked()
         ui->stackedWidget_2->setCurrentIndex(1);
     }else{
         QMessageBox::critical(nullptr, QObject::tr("Selection"),
-                              QObject::tr("You should select and item."), QMessageBox::Cancel);
+                              QObject::tr("Il faut selecter un element d'abord."), QMessageBox::Cancel);
     }
 }
 
@@ -161,7 +161,7 @@ void MainWindow::on_pushButton_8_clicked()
     ui->stackedWidget_2->setCurrentIndex(2);
     }else{
         QMessageBox::critical(nullptr, QObject::tr("Selection"),
-                              QObject::tr("You should select and item."), QMessageBox::Cancel);
+                              QObject::tr("Il faut selecter un element d'abord."), QMessageBox::Cancel);
     }
 }
 
@@ -199,12 +199,12 @@ void MainWindow::on_pushButton_12_clicked()
                                    0, ui->lineEdit_17->text());
     ui->label_12->setVisible(true);
     if(s->addSubscriber() == true){
-        ui->label_12->setText("Status: Added Successfully!");
+        ui->label_12->setText("Status: Ajoute avec succes!");
         QPalette palette = ui->label_12->palette();
          palette.setColor(ui->label_12->foregroundRole(), Qt::green);
          ui->label_12->setPalette(palette);
     }else {
-        ui->label_12->setText("Status: Could not add!");
+        ui->label_12->setText("Status: Ne peut pas ajouter!");
         QPalette palette = ui->label_12->palette();
          palette.setColor(ui->label_12->foregroundRole(), Qt::red);
          ui->label_12->setPalette(palette);
@@ -241,12 +241,12 @@ void MainWindow::on_pushButton_14_clicked()
                                    0, ui->lineEdit_18->text());
     ui->label_19->setVisible(true);
     if(s->modSubscriber() == true){
-        ui->label_19->setText("Status: Modified Successfully!");
+        ui->label_19->setText("Status: Modifie avec succes!");
         QPalette palette = ui->label_19->palette();
          palette.setColor(ui->label_19->foregroundRole(), Qt::green);
          ui->label_19->setPalette(palette);
     }else {
-        ui->label_19->setText("Status: Could not Modify!");
+        ui->label_19->setText("Status: Ne peut pas modifier!");
         QPalette palette = ui->label_19->palette();
          palette.setColor(ui->label_19->foregroundRole(), Qt::red);
          ui->label_19->setPalette(palette);
@@ -337,7 +337,7 @@ void MainWindow::on_pushButton_6_clicked()
         ui->list->setModel(q);
     }else{
         QMessageBox::critical(nullptr, QObject::tr("Warning"),
-          QObject::tr("The subscriber is not found."), QMessageBox::Cancel);
+          QObject::tr("Cet abonnee n'est pas trouve."), QMessageBox::Cancel);
     }
 
 }

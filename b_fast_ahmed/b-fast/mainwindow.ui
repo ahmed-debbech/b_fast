@@ -32,7 +32,7 @@
      <bool>false</bool>
     </property>
     <property name="text">
-     <string>Name of departement</string>
+     <string>Nom de departement</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -54,23 +54,7 @@
      <bool>false</bool>
     </property>
     <property name="text">
-     <string>Name of agent</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>2000</width>
-      <height>1352</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>resources/back.png</pixmap>
+     <string>Nom d'agent</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -83,7 +67,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Log out</string>
+     <string>Deconnexion</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -112,7 +96,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Settings</string>
+     <string>Parametres</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -161,7 +145,7 @@
        </font>
       </property>
       <property name="title">
-       <string>Subscriptions</string>
+       <string>Abonnement</string>
       </property>
       <widget class="QStackedWidget" name="stackedWidget_2">
        <property name="geometry">
@@ -203,7 +187,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Add</string>
+          <string>Ajouter</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_10">
@@ -223,7 +207,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Delete</string>
+          <string>Supprimer</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_11">
@@ -267,7 +251,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Modify</string>
+          <string>Modifier</string>
          </property>
         </widget>
        </widget>
@@ -797,7 +781,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Add a subscriber</string>
+       <string>Ajouter un abonnee</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_5">
@@ -815,7 +799,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Delete a subscriber</string>
+       <string>Supprimer un abonnee</string>
       </property>
      </widget>
      <widget class="QComboBox" name="comboBox">
@@ -834,22 +818,22 @@
       </property>
       <item>
        <property name="text">
-        <string>Don't Sort</string>
+        <string>Pas de tri</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>Sort by name</string>
+        <string>Trier par nom</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>Sort by ID</string>
+        <string>Trier par ID</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>Sort by nb_of_use</string>
+        <string>Trier par utilisation</string>
        </property>
       </item>
      </widget>
@@ -868,7 +852,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Update a subscriber</string>
+       <string>Modifier un abonnee</string>
       </property>
      </widget>
      <widget class="QGroupBox" name="groupBox">
@@ -888,7 +872,7 @@
        </font>
       </property>
       <property name="title">
-       <string>Subscribers</string>
+       <string>Abonnees</string>
       </property>
       <widget class="QPushButton" name="pushButton_7">
        <property name="geometry">
@@ -953,17 +937,17 @@
        </property>
        <item>
         <property name="text">
-         <string>by ID</string>
+         <string>par ID</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>by Name</string>
+         <string>par Nom</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>by Surname</string>
+         <string>par Prenom</string>
         </property>
        </item>
       </widget>
@@ -982,7 +966,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Search</string>
+        <string>Recherche</string>
        </property>
       </widget>
      </widget>
@@ -1009,7 +993,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Identifier:</string>
+       <string>Identite</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_7">
@@ -1027,7 +1011,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Name:</string>
+       <string>Nom</string>
       </property>
      </widget>
      <widget class="QRadioButton" name="radioButton">
@@ -1068,7 +1052,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Add this subscriber</string>
+       <string>Ajouter cet abonnee</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_2">
@@ -1121,7 +1105,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Add a new subscriber</string>
+       <string>Ajouter un nouveau abonnee</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_4">
@@ -1167,7 +1151,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Sex:</string>
+       <string>Sexe</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_11">
@@ -1185,7 +1169,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Surname</string>
+       <string>Prenom</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_13">
@@ -1198,7 +1182,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>Go Back</string>
+       <string>Retour</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_12">
@@ -1232,7 +1216,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>Reset fields</string>
+       <string>Effacer</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_38">
@@ -1282,7 +1266,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Name:</string>
+       <string>Nom</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_14">
@@ -1302,7 +1286,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Modify this subscriber</string>
+       <string>Modifier cet abonnee</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_5">
@@ -1340,7 +1324,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Sex:</string>
+       <string>Sexe</string>
       </property>
      </widget>
      <widget class="QRadioButton" name="radioButton_3">
@@ -1412,7 +1396,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Surname</string>
+       <string>Prenom</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_18">
@@ -1432,7 +1416,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Subscriber's ID :</string>
+       <string>L' ID d'abonnee</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_14">
@@ -1450,7 +1434,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Modify this subscriber</string>
+       <string>Modifier cet abonnee</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_15">
@@ -1463,7 +1447,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>Go Back</string>
+       <string>Retour</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_19">
@@ -1549,7 +1533,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Send Email</string>
+       <string>Envoyer E-mail</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="recipients">
@@ -1579,7 +1563,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Text</string>
+       <string>Texte</string>
       </property>
      </widget>
      <widget class="QTextEdit" name="texteditor">
@@ -1651,7 +1635,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Username:</string>
+       <string>Nom d'utilisateur</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_37">
@@ -1671,7 +1655,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Password:</string>
+       <string>Mot de passe</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_35">
@@ -1691,7 +1675,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Recepient:</string>
+       <string>Receveur</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_39">
@@ -1711,7 +1695,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Subject:</string>
+       <string>Sujet</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_34">
@@ -1731,7 +1715,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Sender</string>
+       <string>Expediteur</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_22">
@@ -1744,19 +1728,11 @@
        </rect>
       </property>
       <property name="text">
-       <string>Back</string>
+       <string>Retour</string>
       </property>
      </widget>
     </widget>
    </widget>
-   <zorder>label</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_3</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>label_2</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>label_5</zorder>
-   <zorder>stackedWidget</zorder>
   </widget>
  </widget>
  <resources/>
