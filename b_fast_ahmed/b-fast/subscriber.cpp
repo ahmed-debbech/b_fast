@@ -137,21 +137,21 @@ QSqlQueryModel * Subscriber :: search (int type, QString key){
             query.bindValue(":id", k);
            query.exec();
            model->setQuery(query);
-           if(model->record(0).isEmpty() == true){ return model = nullptr;}
+           if(model->record(0).value(0).toString() == ""){ return model = nullptr;}
         break;
     case 1:
         query.prepare("Select * from abonne where NOM = :nom");
         query.bindValue(":nom", key);
        query.exec();
        model->setQuery(query);
-       if(model->record(0).isEmpty() == true){ return model = nullptr;}
+       if(model->record(0).value(0).toString() == ""){ return model = nullptr;}
         break;
     case 2:
         query.prepare("Select * from abonne where prenom = :prenom");
         query.bindValue(":prenom", key);
        query.exec();
        model->setQuery(query);
-       if((model->record(0)).isEmpty() == true){return model = nullptr;}
+       if(model->record(0).value(0).toString() == ""){return model = nullptr;}
         break;
     default:
         model = nullptr;
