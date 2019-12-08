@@ -13,11 +13,11 @@ class Subscriber
     QString m_surname;
     QString m_sex;
     int m_pin;
+    QString m_email;
     int m_nb_of_use;
-    std::vector <Subscription> v;
     bool exists();
 public:
-    Subscriber(int, QString, QString, QString, int, int );
+    Subscriber(int, QString, QString, QString, int, int, QString );
     Subscriber(int id);
     Subscriber();
     QSqlQueryModel * showSubscriber();

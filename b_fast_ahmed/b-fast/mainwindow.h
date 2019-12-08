@@ -50,6 +50,13 @@ private slots:
     void on_pushButton_6_clicked();
 
 
+    void on_sendEmail_clicked();
+
+    void on_pushButton_22_clicked();
+
+
+    void on_list_doubleClicked();
+
 private:
     int getIDFromTableView(QTableView * tv);
     Ui::MainWindow *ui;

@@ -1034,7 +1034,7 @@
       <property name="geometry">
        <rect>
         <x>960</x>
-        <y>680</y>
+        <y>640</y>
         <width>151</width>
         <height>81</height>
        </rect>
@@ -1085,7 +1085,7 @@
       <property name="geometry">
        <rect>
         <x>1250</x>
-        <y>680</y>
+        <y>640</y>
         <width>181</width>
         <height>81</height>
        </rect>
@@ -1128,7 +1128,7 @@
       <property name="geometry">
        <rect>
         <x>960</x>
-        <y>870</y>
+        <y>910</y>
         <width>451</width>
         <height>41</height>
        </rect>
@@ -1138,7 +1138,7 @@
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>810</y>
+        <y>850</y>
         <width>191</width>
         <height>161</height>
        </rect>
@@ -1156,7 +1156,7 @@
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>650</y>
+        <y>610</y>
         <width>161</width>
         <height>141</height>
        </rect>
@@ -1235,6 +1235,36 @@
        <string>Reset fields</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_38">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>740</y>
+        <width>301</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>E-mail</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_17">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>790</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_13">
@@ -1289,7 +1319,7 @@
       <property name="geometry">
        <rect>
         <x>910</x>
-        <y>720</y>
+        <y>770</y>
         <width>451</width>
         <height>41</height>
        </rect>
@@ -1299,7 +1329,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>550</y>
+        <y>520</y>
         <width>171</width>
         <height>141</height>
        </rect>
@@ -1317,7 +1347,7 @@
       <property name="geometry">
        <rect>
         <x>920</x>
-        <y>530</y>
+        <y>500</y>
         <width>221</width>
         <height>181</height>
        </rect>
@@ -1330,7 +1360,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>690</y>
+        <y>740</y>
         <width>131</width>
         <height>101</height>
        </rect>
@@ -1348,7 +1378,7 @@
       <property name="geometry">
        <rect>
         <x>1200</x>
-        <y>570</y>
+        <y>540</y>
         <width>161</width>
         <height>111</height>
        </rect>
@@ -1455,6 +1485,266 @@
       </property>
       <property name="text">
        <string>set</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_18">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>660</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>610</y>
+        <width>301</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>E-mail</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLineEdit" name="username">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>190</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>qt1dev@gmail.com</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sendEmail">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>890</y>
+        <width>601</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Send Email</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="recipients">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>360</y>
+        <width>603</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>580</y>
+        <width>589</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Text</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="texteditor">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>580</y>
+        <width>601</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="subject">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>480</y>
+        <width>601</width>
+        <height>61</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="password">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>260</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>thisisustransporters</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sender">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>120</y>
+        <width>603</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Transporters</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>180</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Username:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>281</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Password:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>350</y>
+        <width>261</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Recepient:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>470</y>
+        <width>291</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Subject:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>231</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sender</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_22">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>1171</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back</string>
       </property>
      </widget>
     </widget>

@@ -7,13 +7,14 @@
 #include <QSqlRecord>
 #include <iostream>
 Subscriber::Subscriber(int id, QString name, QString surname
-                       , QString sex, int id_card, int nb_of_use ){
+                       , QString sex, int id_card, int nb_of_use, QString email ){
     m_id = id;
     m_name =name;
     m_surname = surname;
     m_sex = sex;
     m_pin = id_card;
     m_nb_of_use = nb_of_use;
+    m_email = email;
 }
 Subscriber :: Subscriber (int id){
     m_id = id;
@@ -44,12 +45,13 @@ bool Subscriber :: addSubscriber(){
             return false;
         }else{
             QString res= QString::number(m_id);
-            query.prepare("INSERT INTO ABONNE (ID_ABONNEE, NOM, PRENOM, SEXE, PIN, NB_UTIL) "
-                          "VALUES (:id, :nom, :prenom, :sexe, :pin, :nb_util)");
+            query.prepare("INSERT INTO ABONNE (ID_ABONNEE, NOM, PRENOM, SEXE, PIN, NB_UTIL, EMAIL) "
+                          "VALUES (:id, :nom, :prenom, :sexe, :pin, :nb_util, :email)");
             query.bindValue(":id", m_id);
             query.bindValue(":nom", m_name);
             query.bindValue(":prenom", m_surname);
             query.bindValue(":sexe", m_sex);
+            query.bindValue(":email", m_email);
             if(m_pin >= 1000){
                  query.bindValue(":pin", m_pin);
             }else{
@@ -82,12 +84,13 @@ bool Subscriber :: delSubscriber(){
 }
 bool Subscriber :: modSubscriber(){
     QSqlQuery query;
-    query.prepare("UPDATE ABONNE SET NOM= :name, PRENOM= :surname, SEXE= :sex, PIN= :pin WHERE ID_ABONNEE= :id ;");
+    query.prepare("UPDATE ABONNE SET NOM= :name, PRENOM= :surname, SEXE= :sex, PIN= :pin, EMAIL= :email WHERE ID_ABONNEE= :id ;");
     query.bindValue(":name", m_name);
     query.bindValue(":surname", m_surname);
     query.bindValue(":sex", m_sex);
     query.bindValue(":pin", m_pin);
     query.bindValue(":id", m_id);
+    query.bindValue(":email", m_email);
     return query.exec();
 }
 QSqlQueryModel * Subscriber :: showSubscriber(){

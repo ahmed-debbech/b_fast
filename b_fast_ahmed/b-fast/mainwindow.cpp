@@ -2,9 +2,6 @@
 #include "ui_mainwindow.h"
 #include <iostream>
 #include <string>
-#include "subadder.h"
-#include "sbption_add.h"
-#include "sbption_mod.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QString>
@@ -19,19 +16,21 @@
 #include <string>
 #include "subscriber.h"
 #include "subscription.h"
-#include "submod.h"
 #include <QTableView>
 #include "subscription.h"
 #include <QPalette>
 #include <QMessageBox>
 #include <QSqlDatabase>
-
+#include "mailing/smtpclient.h"
+#include "mailing/SmtpMime"
+//#include <openssl/aes.h>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     on_pushButton_7_clicked(); //show subscribers
+
 }
 
 MainWindow::~MainWindow()
@@ -100,6 +99,9 @@ void MainWindow::on_pushButton_4_clicked()
        ui->lineEdit_7->setText(model.record(0).value("PRENOM").toString());
        QString sexe = model.record(0).value("SEXE").toString();
        ui->lineEdit_6->setText(QString::number(model.record(0).value("PIN").toInt()));
+       QSqlRecord rec = model.record(0);
+       ui->lineEdit_18->setText(rec.value("EMAIL").toString());
+
        if(sexe == "m"){
            ui->radioButton_3->setChecked(true);
            ui->radioButton_4->setChecked(false);
@@ -194,7 +196,7 @@ void MainWindow::on_pushButton_12_clicked()
                                    ui->lineEdit_3->text(),
                                    sex,
                                    ui->lineEdit_4->text().toInt(),
-                                   0);
+                                   0, ui->lineEdit_17->text());
     ui->label_12->setVisible(true);
     if(s->addSubscriber() == true){
         ui->label_12->setText("Status: Added Successfully!");
@@ -236,7 +238,7 @@ void MainWindow::on_pushButton_14_clicked()
                                    ui->lineEdit_7->text(),
                                    sex,
                                    ui->lineEdit_6->text().toInt(),
-                                   0);
+                                   0, ui->lineEdit_18->text());
     ui->label_19->setVisible(true);
     if(s->modSubscriber() == true){
         ui->label_19->setText("Status: Modified Successfully!");
@@ -338,4 +340,60 @@ void MainWindow::on_pushButton_6_clicked()
           QObject::tr("The subscriber is not found."), QMessageBox::Cancel);
     }
 
+}
+
+void MainWindow::on_sendEmail_clicked()
+{
+    SmtpClient smtp("smtp.gmail.com", 465, SmtpClient::SslConnection);
+
+        // We need to set the username (your email address) and the password
+        // for smtp authentification.
+
+        smtp.setUser(ui->username->text());
+        smtp.setPassword(ui->password->text());
+    // Now we create a MimeMessage object. This will be the email.
+
+    MimeMessage message;
+
+    message.setSender(new EmailAddress(ui->username->text(), ui->sender->text()));
+    message.addRecipient(new EmailAddress(ui->recipients->text(), ""));
+    message.setSubject(ui->subject->text());
+
+    // Now add some text to the email.
+    // First we create a MimeText object.
+
+    MimeText text;
+
+    text.setText(ui->texteditor->toPlainText());
+
+    // Now add it to the mail
+
+    message.addPart(&text);
+
+    // Now we can send the mail
+
+    smtp.connectToHost();
+    smtp.login();
+    smtp.sendMail(message);
+    smtp.quit();
+}
+
+void MainWindow::on_pushButton_22_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+
+void MainWindow::on_list_doubleClicked()
+{
+    int id = getIDFromTableView(ui->list);
+    QSqlQuery query;
+     query.prepare("Select * from abonne where ID_ABONNEE= :id");
+     query.bindValue(":id", id);
+    query.exec();
+    QSqlQueryModel *model = new QSqlQueryModel();
+    model->setQuery(query);
+    ui->recipients->setText(model->record(0).value(6).toString());
+    ui->stackedWidget->setCurrentIndex(3);
 }
