@@ -70,7 +70,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>//mac/Home/Desktop/Esprit 2/Projet C++/work/back.png</pixmap>
+     <pixmap>resources/back.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -99,7 +99,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>//mac/Home/Desktop/Esprit 2/Projet C++/work/captain (3).png</pixmap>
+     <pixmap>resources/captain (3).png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -128,7 +128,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>//mac/Home/Desktop/Esprit 2/Projet C++/work/logo 100.png</pixmap>
+     <pixmap>resources/logo 100.png</pixmap>
     </property>
    </widget>
    <widget class="QStackedWidget" name="stackedWidget">
@@ -247,7 +247,7 @@
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../refresh.png</normaloff>../refresh.png</iconset>
+           <normaloff>resources/refresh.png</normaloff>resources/refresh.png</iconset>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_8">
@@ -904,14 +904,14 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../refresh.png</normaloff>../refresh.png</iconset>
+         <normaloff>resources/refresh.png</normaloff>resources/refresh.png</iconset>
        </property>
       </widget>
       <widget class="QTableView" name="list">
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>80</y>
+         <y>90</y>
          <width>1191</width>
          <height>1041</height>
         </rect>
