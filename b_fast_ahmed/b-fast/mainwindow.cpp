@@ -93,7 +93,7 @@ void MainWindow::on_pushButton_4_clicked()
        //fill the blanks ...
         ui->label_19->setVisible(false);
         ui->stackedWidget->setCurrentIndex(2);
-       QString res = "Subscriber's ID: " + QString::number(id);
+       QString res = "ID Abonnee: " + QString::number(id);
        ui->label_18->setText(res);
        ui->lineEdit_5->setText(model.record(0).value("NOM").toString());
        ui->lineEdit_7->setText(model.record(0).value("PRENOM").toString());
@@ -127,7 +127,7 @@ void MainWindow::on_pushButton_9_clicked()
 {
     int id = getIDFromTableView(ui->list);
     if(id != -1){
-        ui->label_21->setText("Subscriber's ID: " + QString::number(id));
+        ui->label_21->setText("ID Abonnee: " + QString::number(id));
         ui->stackedWidget_2->setCurrentIndex(1);
     }else{
         QMessageBox::critical(nullptr, QObject::tr("Selection"),
@@ -152,8 +152,8 @@ void MainWindow::on_pushButton_8_clicked()
     query.exec();
     QSqlQueryModel *model = new QSqlQueryModel();
     model->setQuery(query);
-    ui->label_33->setText("Subscriber's ID: " + model->record(0).value(6).toString());
-    ui->label_32->setText("Subscription's ID: " + model->record(0).value(0).toString());
+    ui->label_33->setText("ID Abonnement: " + model->record(0).value(6).toString());
+    ui->label_32->setText("ID Abonnement: " + model->record(0).value(0).toString());
     ui->lineEdit_15->setText(model->record(0).value(1).toString());
     ui->lineEdit_14->setText(model->record(0).value(2).toString());
     ui->lineEdit_13->setText(model->record(0).value(3).toString());
