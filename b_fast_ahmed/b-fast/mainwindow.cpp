@@ -23,6 +23,7 @@
 #include <QSqlDatabase>
 #include "mailing/smtpclient.h"
 #include "mailing/SmtpMime"
+#include <QStringList>
 //#include <openssl/aes.h>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -129,6 +130,28 @@ void MainWindow::on_pushButton_9_clicked()
     if(id != -1){
         ui->label_21->setText("ID Abonnee: " + QString::number(id));
         ui->stackedWidget_2->setCurrentIndex(1);
+        QSqlQueryModel model;
+        QSqlQuery query;
+        query.prepare("select count(*) from LIGNE");
+        query.exec();
+        int size = -1;
+        if(query.next() == true){
+            size = query.value(0).toInt();
+        }
+        std::cout << size << std::endl;
+
+        query.prepare("select * from LIGNE");
+        query.exec();
+        model.setQuery(query);
+        QStringList list;
+        int i=0;
+        if(model.record(0).isEmpty() == false){
+            do{
+                list << model.record(i).value(0).toString();
+                i++;
+            }while((model.record(i).isEmpty() == false) && (i <= size-1));
+            ui->comboBox_3->addItems(list);
+        }
     }else{
         QMessageBox::critical(nullptr, QObject::tr("Selection"),
                               QObject::tr("Il faut selecter un element d'abord."), QMessageBox::Cancel);
