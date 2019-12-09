@@ -330,18 +330,7 @@ void MainWindow::on_pushButton_20_clicked()
 void MainWindow::on_pushButton_6_clicked()
 {
     QString key = ui->plainTextEdit->toPlainText();
-    int index =-1;
-    QString i = ui->comboBox_2->currentText();
-    if(i == "par ID"){
-        index = 0;
-    }else{
-        if(i == "par Nom"){
-            index = 1;
-        }else{
-            index = 2;
-        }
-    }
-   std::cout << "index" << index <<std::endl;
+    int index = ui->comboBox_2->itemData(ui->comboBox_2->currentIndex()).toInt();
     Subscriber * s = new Subscriber();
     QSqlQueryModel * q = s->search(index, key);
     if(q != nullptr){
