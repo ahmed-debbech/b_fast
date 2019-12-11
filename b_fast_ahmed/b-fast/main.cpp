@@ -2,6 +2,7 @@
 #include <QMessageBox>
 #include <QApplication>
 #include <QSqlDatabase>
+#include <QPixmap>
 
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);

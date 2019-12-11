@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/imgss">
+        <file>imgs/but.png</file>
+        <file>imgs/graph.png</file>
+    </qresource>
+</RCC>

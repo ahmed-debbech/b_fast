@@ -116,34 +116,41 @@ DISTFILES += \
     OpenSSL-Win64/readme.txt \
     OpenSSL-Win64/unins000.dat \
     OpenSSL-Win64/unins000.exe \
+    imgs/but.png \
+    imgs/graph.png \
     mailing.rar \
-    resources/Page de garde_nom_classe.docx \
-    resources/admin.png \
-    resources/aziz.jpg \
-    resources/back.png \
-    resources/back.psd \
-    resources/businessman.png \
-    resources/captain (1).png \
-    resources/captain (2).png \
-    resources/captain (3).png \
-    resources/captain.png \
-    resources/diag.jpg \
-    resources/gestion des abonnees et des abonnements.cdb \
-    resources/gestion des abonnees et des abonnements.cdm \
-    resources/gestion.mdj \
-    resources/logo 100.png \
-    resources/logo 25.png \
-    resources/logo 300.png \
-    resources/logo 75.png \
-    resources/logo bfastpng.png \
-    resources/logo group.jpg \
-    resources/logo group.png \
-    resources/logo.ai \
-    resources/logobfast.ai \
-    resources/malik.jpg \
-    resources/presentation-projetcpptx.pptx \
-    resources/refresh.png \
-    resources/wassim.jpg \
-    resources/yasssine.jpg \
-    resources/zied.jpg \
+    re/Page de garde_nom_classe.docx \
+    re/admin.png \
+    re/aziz.jpg \
+    re/back.png \
+    re/back.psd \
+    re/businessman.png \
+    re/but.png \
+    re/captain (1).png \
+    re/captain (2).png \
+    re/captain (3).png \
+    re/captain.png \
+    re/diag.jpg \
+    re/gestion des abonnees et des abonnements.cdb \
+    re/gestion des abonnees et des abonnements.cdm \
+    re/gestion.mdj \
+    re/graph.png \
+    re/logo 100.png \
+    re/logo 25.png \
+    re/logo 300.png \
+    re/logo 75.png \
+    re/logo bfastpng.png \
+    re/logo group.jpg \
+    re/logo group.png \
+    re/logo.ai \
+    re/logobfast.ai \
+    re/malik.jpg \
+    re/presentation-projetcpptx.pptx \
+    re/refresh.png \
+    re/wassim.jpg \
+    re/yasssine.jpg \
+    re/zied.jpg \
     simple-mail-master.zip
+
+RESOURCES += \
+    res.qrc

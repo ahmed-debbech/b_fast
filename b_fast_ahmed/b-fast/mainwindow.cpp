@@ -24,6 +24,7 @@
 #include "mailing/smtpclient.h"
 #include "mailing/SmtpMime"
 #include <QStringList>
+
 //#include <openssl/aes.h>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

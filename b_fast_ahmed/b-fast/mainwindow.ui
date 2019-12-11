@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow{
+background-image: url(:/imgss/imgs/graph.png);
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_4">
     <property name="geometry">
@@ -176,7 +181,7 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>8</pointsize>
+           <pointsize>7</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -811,7 +816,7 @@
        <rect>
         <x>930</x>
         <y>40</y>
-        <width>421</width>
+        <width>418</width>
         <height>41</height>
        </rect>
       </property>
@@ -821,6 +826,16 @@
         <weight>75</weight>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_3{
+background-color: transparent;
+background-image: url(:/imgss/imgs/but.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
       </property>
       <property name="text">
        <string>Ajouter un abonnee</string>
