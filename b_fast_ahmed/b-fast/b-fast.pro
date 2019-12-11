@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    arduino.cpp \
     mailing/emailaddress.cpp \
     mailing/mimeattachment.cpp \
     mailing/mimecontentformatter.cpp \
@@ -36,6 +37,7 @@ SOURCES += \
 
 
 HEADERS += \
+    arduino.h \
     mailing/SmtpMime \
     mailing/emailaddress.h \
     mailing/mimeattachment.h \
@@ -62,3 +64,86 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+DISTFILES += \
+    OpenSSL-Win64/acknowledgements.txt \
+    OpenSSL-Win64/authors.txt \
+    OpenSSL-Win64/bin/CA.pl \
+    OpenSSL-Win64/bin/PEM/ca-cert.srl \
+    OpenSSL-Win64/bin/PEM/ca-key.pem \
+    OpenSSL-Win64/bin/PEM/ca-req.pem \
+    OpenSSL-Win64/bin/PEM/cert.pem \
+    OpenSSL-Win64/bin/PEM/client.pem \
+    OpenSSL-Win64/bin/PEM/demoSRP/srp_verifier.txt \
+    OpenSSL-Win64/bin/PEM/demoSRP/srp_verifier.txt.attr \
+    OpenSSL-Win64/bin/PEM/dh1024.pem \
+    OpenSSL-Win64/bin/PEM/dh2048.pem \
+    OpenSSL-Win64/bin/PEM/dh4096.pem \
+    OpenSSL-Win64/bin/PEM/dsa-ca.pem \
+    OpenSSL-Win64/bin/PEM/dsa-pca.pem \
+    OpenSSL-Win64/bin/PEM/dsa1024.pem \
+    OpenSSL-Win64/bin/PEM/dsa512.pem \
+    OpenSSL-Win64/bin/PEM/dsap.pem \
+    OpenSSL-Win64/bin/PEM/pca-cert.srl \
+    OpenSSL-Win64/bin/PEM/pca-key.pem \
+    OpenSSL-Win64/bin/PEM/pca-req.pem \
+    OpenSSL-Win64/bin/PEM/privkey.pem \
+    OpenSSL-Win64/bin/PEM/req.pem \
+    OpenSSL-Win64/bin/PEM/rsa8192.pem \
+    OpenSSL-Win64/bin/PEM/s1024key.pem \
+    OpenSSL-Win64/bin/PEM/s1024req.pem \
+    OpenSSL-Win64/bin/PEM/s512-key.pem \
+    OpenSSL-Win64/bin/PEM/s512-req.pem \
+    OpenSSL-Win64/bin/PEM/server.pem \
+    OpenSSL-Win64/bin/PEM/server.srl \
+    OpenSSL-Win64/bin/PEM/server2.pem \
+    OpenSSL-Win64/bin/PEM/testCA.pem \
+    OpenSSL-Win64/bin/capi.dll \
+    OpenSSL-Win64/bin/dasync.dll \
+    OpenSSL-Win64/bin/libcrypto-1_1-x64.dll \
+    OpenSSL-Win64/bin/libssl-1_1-x64.dll \
+    OpenSSL-Win64/bin/openssl.exe \
+    OpenSSL-Win64/bin/ossltest.dll \
+    OpenSSL-Win64/bin/padlock.dll \
+    OpenSSL-Win64/bin/progs.pl \
+    OpenSSL-Win64/bin/tsget.pl \
+    OpenSSL-Win64/c_rehash.pl \
+    OpenSSL-Win64/changes.txt \
+    OpenSSL-Win64/faq.txt \
+    OpenSSL-Win64/libcrypto-1_1-x64.dll \
+    OpenSSL-Win64/libssl-1_1-x64.dll \
+    OpenSSL-Win64/license.txt \
+    OpenSSL-Win64/news.txt \
+    OpenSSL-Win64/readme.txt \
+    OpenSSL-Win64/unins000.dat \
+    OpenSSL-Win64/unins000.exe \
+    mailing.rar \
+    resources/Page de garde_nom_classe.docx \
+    resources/admin.png \
+    resources/aziz.jpg \
+    resources/back.png \
+    resources/back.psd \
+    resources/businessman.png \
+    resources/captain (1).png \
+    resources/captain (2).png \
+    resources/captain (3).png \
+    resources/captain.png \
+    resources/diag.jpg \
+    resources/gestion des abonnees et des abonnements.cdb \
+    resources/gestion des abonnees et des abonnements.cdm \
+    resources/gestion.mdj \
+    resources/logo 100.png \
+    resources/logo 25.png \
+    resources/logo 300.png \
+    resources/logo 75.png \
+    resources/logo bfastpng.png \
+    resources/logo group.jpg \
+    resources/logo group.png \
+    resources/logo.ai \
+    resources/logobfast.ai \
+    resources/malik.jpg \
+    resources/presentation-projetcpptx.pptx \
+    resources/refresh.png \
+    resources/wassim.jpg \
+    resources/yasssine.jpg \
+    resources/zied.jpg \
+    simple-mail-master.zip
