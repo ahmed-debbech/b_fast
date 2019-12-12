@@ -166,6 +166,16 @@ background-image: url(:/imgss/imgs/graph.png);
            <bold>true</bold>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_9{
+background-color: transparent;
+background-image: url(:/imgss/imgs/smallbut.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
+         </property>
          <property name="text">
           <string>Ajouter</string>
          </property>
@@ -186,6 +196,16 @@ background-image: url(:/imgss/imgs/graph.png);
            <bold>true</bold>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_10{
+background-color: transparent;
+background-image: url(:/imgss/imgs/smallbut.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
+         </property>
          <property name="text">
           <string>Supprimer</string>
          </property>
@@ -205,6 +225,17 @@ background-image: url(:/imgss/imgs/graph.png);
            <weight>50</weight>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_11{
+background-color: transparent;
+background-image: url(:/imgss/imgs/smallbut.png);
+border: none;
+color:white;
+background-repeat: none;
+qproperty-icon: theme_url(:/imgss/imgs/smallbut.png);
+}
+</string>
          </property>
          <property name="text">
           <string/>
@@ -229,6 +260,16 @@ background-image: url(:/imgss/imgs/graph.png);
            <weight>75</weight>
            <bold>true</bold>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_8{
+background-color: transparent;
+background-image: url(:/imgss/imgs/smallbut.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
          </property>
          <property name="text">
           <string>Modifier</string>
@@ -835,7 +876,13 @@ border: none;
 color:white;
 background-repeat: none;
 }
-</string>
+#pushButton_3:hover {
+background-image: url(:/imgss/imgs/buthover.png);
+background-color: transparent;
+border: none;
+color:white;
+background-repeat: none;
+ }</string>
       </property>
       <property name="text">
        <string>Ajouter un abonnee</string>
@@ -857,6 +904,22 @@ background-repeat: none;
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_5{
+background-color: transparent;
+background-image: url(:/imgss/imgs/but.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+#pushButton_5:hover {
+background-image: url(:/imgss/imgs/buthover.png);
+background-color: transparent;
+border: none;
+color:white;
+background-repeat: none;
+ }</string>
+      </property>
       <property name="text">
        <string>Supprimer un abonnee</string>
       </property>
@@ -876,6 +939,29 @@ background-repeat: none;
         <weight>75</weight>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox{
+background-color: transparent;
+background-image: url(:/imgss/imgs/but.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+#comboBox{
+background-color: transparent;
+background-image: url(:/imgss/imgs/but.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+#comboBox:hover {
+background-image: url(:/imgss/imgs/buthover.png);
+background-color: transparent;
+border: none;
+color:white;
+background-repeat: none;
+ }</string>
       </property>
       <item>
        <property name="text">
@@ -913,6 +999,22 @@ background-repeat: none;
         <weight>75</weight>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_4{
+background-color: transparent;
+background-image: url(:/imgss/imgs/but.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+#pushButton_4:hover {
+background-image: url(:/imgss/imgs/buthover.png);
+background-color: transparent;
+border: none;
+color:white;
+background-repeat: none;
+ }</string>
       </property>
       <property name="text">
        <string>Modifier un abonnee</string>
@@ -953,6 +1055,16 @@ background-repeat: none;
          <bold>true</bold>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_7{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butback.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -976,6 +1088,12 @@ background-repeat: none;
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">list {
+     selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                 stop: 0 #FF92BB, stop: 1 white);
+ }</string>
        </property>
       </widget>
       <widget class="QPlainTextEdit" name="plainTextEdit">
@@ -1045,6 +1163,16 @@ background-repeat: none;
          <weight>75</weight>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_6{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butrecherche.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
        </property>
        <property name="text">
         <string>Recherche</string>
@@ -1134,6 +1262,22 @@ background-repeat: none;
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_12{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butbig.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+#pushButton_12:hover {
+background-image: url(:/imgss/imgs/butbighover.png);
+background-color: transparent;
+border: none;
+color:white;
+background-repeat: none;
+ }</string>
+      </property>
       <property name="text">
        <string>Ajouter cet abonnee</string>
       </property>
@@ -1186,6 +1330,11 @@ background-repeat: none;
         <weight>75</weight>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#label_8{
+color:white;
+}</string>
       </property>
       <property name="text">
        <string>Ajouter un nouveau abonnee</string>
@@ -1260,9 +1409,19 @@ background-repeat: none;
        <rect>
         <x>20</x>
         <y>40</y>
-        <width>101</width>
+        <width>91</width>
         <height>51</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_13{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butback.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
       </property>
       <property name="text">
        <string>Retour</string>
@@ -1294,9 +1453,19 @@ background-repeat: none;
        <rect>
         <x>20</x>
         <y>110</y>
-        <width>101</width>
+        <width>91</width>
         <height>51</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_16{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butback.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
       </property>
       <property name="text">
        <string>Effacer</string>
@@ -1337,7 +1506,7 @@ background-repeat: none;
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>500</x>
+        <x>350</x>
         <y>110</y>
         <width>181</width>
         <height>121</height>
@@ -1355,7 +1524,7 @@ background-repeat: none;
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>540</x>
+        <x>440</x>
         <y>-10</y>
         <width>701</width>
         <height>141</height>
@@ -1368,6 +1537,11 @@ background-repeat: none;
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#label_14{
+color:white;
+}</string>
+      </property>
       <property name="text">
        <string>Modifier cet abonnee</string>
       </property>
@@ -1375,7 +1549,7 @@ background-repeat: none;
      <widget class="QLineEdit" name="lineEdit_5">
       <property name="geometry">
        <rect>
-        <x>640</x>
+        <x>490</x>
         <y>150</y>
         <width>451</width>
         <height>41</height>
@@ -1385,7 +1559,7 @@ background-repeat: none;
      <widget class="QLineEdit" name="lineEdit_6">
       <property name="geometry">
        <rect>
-        <x>640</x>
+        <x>490</x>
         <y>410</y>
         <width>451</width>
         <height>41</height>
@@ -1395,7 +1569,7 @@ background-repeat: none;
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>500</x>
+        <x>350</x>
         <y>220</y>
         <width>171</width>
         <height>141</height>
@@ -1413,7 +1587,7 @@ background-repeat: none;
      <widget class="QRadioButton" name="radioButton_3">
       <property name="geometry">
        <rect>
-        <x>650</x>
+        <x>500</x>
         <y>200</y>
         <width>221</width>
         <height>181</height>
@@ -1426,7 +1600,7 @@ background-repeat: none;
      <widget class="QLabel" name="label_16">
       <property name="geometry">
        <rect>
-        <x>410</x>
+        <x>350</x>
         <y>380</y>
         <width>131</width>
         <height>101</height>
@@ -1444,7 +1618,7 @@ background-repeat: none;
      <widget class="QRadioButton" name="radioButton_4">
       <property name="geometry">
        <rect>
-        <x>930</x>
+        <x>780</x>
         <y>240</y>
         <width>161</width>
         <height>111</height>
@@ -1457,7 +1631,7 @@ background-repeat: none;
      <widget class="QLineEdit" name="lineEdit_7">
       <property name="geometry">
        <rect>
-        <x>640</x>
+        <x>490</x>
         <y>210</y>
         <width>451</width>
         <height>41</height>
@@ -1467,7 +1641,7 @@ background-repeat: none;
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
-        <x>410</x>
+        <x>350</x>
         <y>150</y>
         <width>191</width>
         <height>161</height>
@@ -1485,9 +1659,9 @@ background-repeat: none;
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
-        <x>-30</x>
+        <x>10</x>
         <y>110</y>
-        <width>631</width>
+        <width>481</width>
         <height>131</height>
        </rect>
       </property>
@@ -1505,10 +1679,10 @@ background-repeat: none;
      <widget class="QPushButton" name="pushButton_14">
       <property name="geometry">
        <rect>
-        <x>410</x>
+        <x>340</x>
         <y>470</y>
-        <width>681</width>
-        <height>61</height>
+        <width>701</width>
+        <height>71</height>
        </rect>
       </property>
       <property name="font">
@@ -1517,6 +1691,22 @@ background-repeat: none;
         <weight>75</weight>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_14{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butbig.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+#pushButton_14:hover {
+background-image: url(:/imgss/imgs/butbighover.png);
+background-color: transparent;
+border: none;
+color:white;
+background-repeat: none;
+ }</string>
       </property>
       <property name="text">
        <string>Modifier cet abonnee</string>
@@ -1527,9 +1717,19 @@ background-repeat: none;
        <rect>
         <x>20</x>
         <y>40</y>
-        <width>141</width>
-        <height>61</height>
+        <width>91</width>
+        <height>51</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_15{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butback.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
       </property>
       <property name="text">
        <string>Retour</string>
@@ -1559,7 +1759,7 @@ background-repeat: none;
      <widget class="QLineEdit" name="lineEdit_18">
       <property name="geometry">
        <rect>
-        <x>640</x>
+        <x>490</x>
         <y>340</y>
         <width>451</width>
         <height>41</height>
@@ -1569,7 +1769,7 @@ background-repeat: none;
      <widget class="QLabel" name="label_40">
       <property name="geometry">
        <rect>
-        <x>410</x>
+        <x>350</x>
         <y>290</y>
         <width>301</width>
         <height>141</height>
@@ -1616,6 +1816,22 @@ background-repeat: none;
         <weight>75</weight>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#sendEmail{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butbig.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+#sendEmail:hover {
+background-image: url(:/imgss/imgs/butbighover.png);
+background-color: transparent;
+border: none;
+color:white;
+background-repeat: none;
+ }</string>
       </property>
       <property name="text">
        <string>Envoyer E-mail</string>
@@ -1808,9 +2024,19 @@ background-repeat: none;
        <rect>
         <x>1210</x>
         <y>20</y>
-        <width>101</width>
-        <height>41</height>
+        <width>91</width>
+        <height>51</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_7{
+background-color: transparent;
+background-image: url(:/imgss/imgs/butback.png);
+border: none;
+color:white;
+background-repeat: none;
+}
+</string>
       </property>
       <property name="text">
        <string>Retour</string>

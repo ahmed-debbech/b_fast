@@ -2,5 +2,12 @@
     <qresource prefix="/imgss">
         <file>imgs/but.png</file>
         <file>imgs/graph.png</file>
+        <file>imgs/smallbut.png</file>
+        <file>imgs/buthover.png</file>
+        <file>imgs/reload.png</file>
+        <file>imgs/butrecherche.png</file>
+        <file>imgs/butbighover.png</file>
+        <file>imgs/butback.png</file>
+        <file>imgs/butbig.png</file>
     </qresource>
 </RCC>
