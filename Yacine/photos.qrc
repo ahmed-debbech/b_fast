@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/Y:\Yacine\img"/>
+    <qresource prefix="/">
+        <file>img/GererEmpPre.png</file>
+        <file>img/CRUD.png</file>
+        <file>img/AjouterEmp.png</file>
+        <file>img/Modifier.png</file>
+        <file>img/Supprimer.png</file>
+        <file>icon.ico</file>
+        <file>icon.png</file>
+        <file>img/CRUDpre.png</file>
+        <file>img/AjouterPre.png</file>
+        <file>img/ModifierPre.png</file>
+        <file>img/SupprimerPre.png</file>
+        <file>img/button.wav</file>
+        <file>img/logo APP-01.png</file>
+    </qresource>
+</RCC>
